@@ -1,0 +1,30 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "name": "Express server",
+      "program": "${workspaceFolder}/bin/www",
+      "request": "launch",
+      "restart": true,
+      "runtimeExecutable": "nodemon",
+      "env": {
+        "NODE_ENV": "development",
+        "DEBUG": "express-ejs-template:*"
+      },
+      "skipFiles": ["<node_internals>/**"],
+      "type": "pwa-node"
+    },
+    {
+      "type": "pwa-chrome",
+      "request": "launch",
+      "name": "Chrome browser",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/public/"
+    }
+  ]
+}
